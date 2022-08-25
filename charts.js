@@ -53,6 +53,7 @@ function buildMetadata(sample) {
 
   });
 }
+// deliverable 1
 
 // 1. Create the buildCharts function.
 function buildCharts(sample) {
@@ -84,7 +85,11 @@ function buildCharts(sample) {
       y: yticks,
       text: hover,
       type: "bar",
-      orientation: "h"
+      orientation: "h",
+      marker: {
+        color: xSamples,
+        autocolorscale: true
+      }
     }];
     
     // 9. Create the layout for the bar chart. 
@@ -96,5 +101,32 @@ function buildCharts(sample) {
 
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
+
+    // deliverable 2
+
+    // 1. Create the trace for the bubble chart.
+    var bubbleData = [{
+      x: otuIDs,
+      y: sampleValues,
+      text: otuLabels,
+      mode: 'markers',
+      marker: {
+        size: sampleValues,
+        color: otuIDs,
+        colorscale: 'Picnic'
+      },
+  }];
+    
+    // 2. Create the layout for the bubble chart.
+    var bubbleLayout = {
+      title: "Bacteria Cultures Found",
+      xaxis: { title: "OTU ID#"},
+      yaxis: { title: "# of Bacteria"},
+      automargin: true,
+      hovermode: "closest"
+    };
+    
+    // 3. Use Plotly to plot the data with the layout.
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
   });
 }
