@@ -95,11 +95,12 @@ function buildCharts(sample) {
     var barLayout = {
       title: "<b>Top 10 Bacteria Cultures Found</b>",
       xaxis: { title: "# of Bacteria"},
-      yaxis: { title: "ID #"}
+      yaxis: { title: "ID #"},
+      paper_bgcolor: "rgba(0,0,0,0)"
     };
 
     // 10. Use Plotly to plot the data with the layout. 
-    Plotly.newPlot("bar", barData, barLayout);
+    Plotly.newPlot("bar", barData, barLayout, {responsive: true});
 
     // deliverable 2 - bubble chart
 
@@ -122,11 +123,13 @@ function buildCharts(sample) {
       xaxis: { title: "OTU ID#"},
       yaxis: { title: "# of Bacteria"},
       automargin: true,
-      hovermode: "closest"
+      hovermode: "closest",
+      paper_bgcolor: "rgba(0,0,0,0)"
     };
-    
+
     // 3. Use Plotly to plot the data with the layout.
-    Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+    // will not shrink to fit mobile devices due to affecting visual readability of chart. however, upon mobile viewing, the user is able to scroll sideways to view all bubbles in better detail
 
     // deliverable 3 - gauge chart
 
@@ -166,12 +169,13 @@ function buildCharts(sample) {
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = {
-      width: 500, 
-      height: 400,
-      margin: { l: 50, t: 150, r: 50,  b: 50 }
+      // width: 500, 
+      // height: 400,
+      margin: { l: 50, t: 150, r: 50,  b: 50 },
+      paper_bgcolor: "rgba(0,0,0,0)"
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
-    Plotly.newPlot('gauge', gaugeData, gaugeLayout);
+    Plotly.newPlot('gauge', gaugeData, gaugeLayout, {responsive: true});
   });
 }

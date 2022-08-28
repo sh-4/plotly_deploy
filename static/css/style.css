@@ -1,0 +1,46 @@
+
+
+.jumbotron {
+    background-image: url("../images/bellyButtonPic.jpg");
+    /* image retrieved from: https://littlethings.com/lifestyle/belly-button-shape-personality-test */
+    background-size: 100% 100%;
+    text-align: center;
+  }
+
+body {
+  background-color: rgba(187, 187, 187, 0.588);
+  }
+
+#jumbotext {
+  background-color: rgba(255, 252, 252, 0.588);
+}
+
+.well {
+  background-color: rgb(214, 214, 214);
+  border:2px solid rgb(255, 255, 255);
+}
+
+#selDataset{
+  background-color: rgb(195, 195, 195);
+}
+
+.panel-heading {
+  background-color: rgb(195, 195, 195);
+  border:1px solid rgb(255, 255, 255);
+}
+#sample-metadata{
+  background-color: rgba(187, 187, 187, 0.588);
+  border:1px solid rgb(255, 255, 255);
+}
+
+#bar {
+  background-color: rgb(214, 214, 214);
+}
+
+#gauge {
+  background-color: rgb(214, 214, 214);
+}
+
+#bubble {
+  background-color: rgb(214, 214, 214);
+}
