@@ -2,7 +2,7 @@
 
 ## Overview
 
-Roze, a biological researcher, and her lab have partnered up with a food startup company called Improbable Beef. They are hoping to identify a species of bacteria that can synthesize proteins to imitate the taste of meat. Roza believes this bacteria could be present within the human belly button.
+Roza, a biological researcher, and her lab have partnered up with a food startup company called Improbable Beef. They are hoping to identify a species of bacteria that can synthesize proteins to imitate the taste of meat. Roza believes this bacteria could be present within the human belly button.
 
 ## Summary
 
